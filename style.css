@@ -18,12 +18,14 @@ body{
     box-shadow: -8px 10px 5px rgb(0, 0, 0);
 }
 .container .items{
+    margin: 5px;
     height: 100%;
-    width: 100%;
+    width: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
     gap: 10px;
+    
 }
 .container .items input{
     padding-right: 10px;
@@ -55,5 +57,24 @@ button{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+
+@media(max-width: 768px ){
+    .container{
+        width: 70%;
+        height: 80%;
+    }
+}
+
+@media(max-width: 425px ){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        width: auto;
+        margin: 5px;
+    }
 }
 
